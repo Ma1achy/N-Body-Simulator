@@ -2,7 +2,7 @@
 =====N-BODY SIMULATIONS=====
 
 A collection of Python scripts to simulate the gravitational interactions between massive bodies using either the naive brute force algorithm
-or the Barnes-Hut algorithm. This was written for a project for a scientific computing module, done as part of an undergraduate physics degree.
+or the Barnes-Hut algorithm. This was a project for a scientific computing module, done as part of an undergraduate physics degree.
 
 =====GETTING STARTED=====
 
