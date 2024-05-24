@@ -1,10 +1,10 @@
 
-================================================================================N-BODY SIMULATIONS===============================================================================================
+=====N-BODY SIMULATIONS=====
 
 A collection of Python scripts to simulate the gravitational interactions between massive bodies using either the naive brute force algorithm
-or the Barnes-Hut algorithm. 
+or the Barnes-Hut algorithm. This was written for a project for a scientific computing module, done as part of an undergraduate physics degree.
 
-==================================================================================GETTING STARTED=================================================================================================
+=====GETTING STARTED=====
 
 To create a simulation open "generate-templates.py" and run the script. It will create 8 simulation templates by default, these are .csv files containing
 the inital conditions to different simulations, the default directory is N-Body/sim templates.
@@ -27,7 +27,7 @@ path to the render folder, then run the script. Inside the "YYYY-MM-DD HH-MM-SS 
 
 There are two precomputed simulations, The test case, and a simulation of the solar system ready to be used with the Pygame visualisation.
 
-====================================================================================DEPENDENCIES================================================================================================
+=====DEPENDENCIES=====
 
 Python v3.12+
 
@@ -40,7 +40,8 @@ astropy.coordinates
 Pygame
 imageio.v2
 
-========================================================================================HELP=====================================================================================================
+=====HELP=====
+
 Why is my simulation taking a long time to compute?
 
 Make sure have a reasonable maximum number of iterations.
@@ -51,8 +52,7 @@ Increasing the minimum quad size in the simulation parameters for Barnes-Hut can
 
 NOTE: The Barnes-Hut algorithm will take longer than should be expected for small N of particles whilist mainting the same accuracy as the brute force algorithm due to
 the lower order integration scheme meaning more timesteps of higher temporal resoultion are required, that and the entire script for it is written in
-Python whereas the brute force uses scipy which is written in CPython and so is faster at integrating. So the test case and simulations of hundreds to thousands of particles all take
-anywhere from 10-20 minutes to around a day or more so as long as the loading bar and iteration count is changing the Barnes-Hut script is working on the simulation.
+Python whereas the brute force uses scipy and so it is faster at integrating.
 
 How do I change the brute force algorithms error tolerances?
 
@@ -81,8 +81,3 @@ Press the "V" key to toggle the drawing of the velocity and force vectors
 Press the "Q" key to toggle the drawing of the Quadtree
 Press the "F" key to toggle the drawing of body trails
 Press the "C" key to toggle the debug culling hitboxes
-
-===================================================================================AUTHORS=======================================================================================================
-
-Malachy Doherty
-ppymd5@nottingham.ac.uk
