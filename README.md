@@ -58,7 +58,7 @@ Used to study the interactions within and between star systems and galaxies for 
 
 --- 
 # **Dependencies**
----
+
 ```
 python >=3.12
 numpy<2.0
