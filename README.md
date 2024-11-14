@@ -33,7 +33,7 @@ Used to study the interactions within and between star systems and galaxies, wri
         <li>A vectorized direct summation scheme using <code>numpy</code> & <code>scipy.integrate.odeint</code>.</li>
       </ul>
       <p align="center">
-        <img src="https://github.com/user-attachments/assets/9e2fc945-bff8-4f4d-a877-8e94aaa7378b" width="700" height="250" />
+        <img src="https://github.com/user-attachments/assets/9e2fc945-bff8-4f4d-a877-8e94aaa7378b" width="512" height="200" />
       </p>
     </td>
   </tr>
