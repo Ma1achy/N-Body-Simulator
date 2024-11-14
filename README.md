@@ -28,7 +28,7 @@ Used to study the interactions within and between star systems and galaxies for 
 + **5 pre-defined simulation inital conditons**:
   - Binary Star System
     <p align="left">
-    <img src="https://github.com/user-attachments/assets/0f59e275-049c-49f4-a9d6-a714ea22fbca" width="512" height="512" />
+    <img src="https://github.com/user-attachments/assets/0f59e275-049c-49f4-a9d6-a714ea22fbca" width="600" height="512" />
     </p>  
   - Burrau's Problem
     <p align="left">
@@ -51,7 +51,7 @@ Used to study the interactions within and between star systems and galaxies for 
   - camera movement and zooming
   - frame saving
   <p align="left">
-  <img src="https://github.com/user-attachments/assets/3d680856-2f6f-4c44-8a44-cdc9caef6ab2" width="512" height="512" />
+  <img src="https://github.com/user-attachments/assets/3d680856-2f6f-4c44-8a44-cdc9caef6ab2" width="600" height="512" />
   </p> 
   
 + **GIF creation of simulations**
