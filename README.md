@@ -15,11 +15,9 @@ Used to study the interactions within and between star systems and galaxies, wri
 
 # **Features**
 ---
-<h1>Features</h1>
-
-<table>
+<table style="width: 100%; table-layout: fixed;">
   <tr>
-    <td colspan="2"><strong>A gravitational dynamics simulator that uses either:</strong></td>
+    <td colspan="2" style="text-align: center; width: 100%"><strong>A gravitational dynamics simulator that uses either:</strong></td>
   </tr>
   <tr>
     <td>
@@ -30,7 +28,7 @@ Used to study the interactions within and between star systems and galaxies, wri
         <img src="https://github.com/user-attachments/assets/21985872-9257-4264-bdf3-4bf309291936" width="400" height="400" />
       </p>
     </td>
-    <td>
+    <td style="width: 50%; padding: 10px;">
       <ul>
         <li>A vectorized direct summation scheme using <code>numpy</code> & <code>scipy.integrate.odeint</code>.</li>
       </ul>
@@ -41,43 +39,47 @@ Used to study the interactions within and between star systems and galaxies, wri
   </tr>
 </table>
 
-<table>
+<!-- Second Feature Section -->
+<div style="display: flex; justify-content: center; width: 100%;">
+<table style="width: 80%; table-layout: fixed; margin: 0 auto;">
   <tr>
-    <td colspan="2"><strong>5 pre-defined simulation initial conditions:</strong></td>
+    <td colspan="3" style="text-align: center; width: 100%"><strong>5 pre-defined simulation initial conditions:</strong></td>
   </tr>
   <tr>
-    <td>
+    <td style="width: 33%; padding: 10px;">
       <ul>
         <li>Binary Star System</li>
       </ul>
-      <p align="center">
+      <p align="left">
         <img src="https://github.com/user-attachments/assets/0f59e275-049c-49f4-a9d6-a714ea22fbca" width="300" height="256" />
       </p>
       <ul>
         <li>Burrau's Problem</li>
       </ul>
-      <p align="center">
+      <p align="left">
         <img src="https://github.com/user-attachments/assets/f548dac5-0924-4a38-a148-afd5e1926280" width="300" height="256" />
       </p>
     </td>
-    <td>
+    <td style="width: 33%; padding: 10px;">
       <ul>
-        <li>The Solar System (Supports positions of the planets at a specified date & time!)</li>
+        <li>The Solar System</li>
       </ul>
-      <p align="center">
-        <img src="https://github.com/user-attachments/assets/f6558622-4002-4235-acd0-c2cfadcbb67d" width="300" height="256" />
+      <p align="left">
+        <img src="https://github.com/user-attachments/assets/f6558622-4002-4235-acd0-c2cfadcbb67d" width="300" height="300" />
       </p>
+    </td>
+    <td style="width: 33%; padding: 10px;">
       <ul>
         <li>Spiral Galaxy</li>
       </ul>
-      <p align="center">
-        <img src="https://github.com/user-attachments/assets/1121a530-549d-4898-9b16-1a4ae509e8d7" width="300" height="256" />
+      <p align="left">
+        <img src="https://github.com/user-attachments/assets/1121a530-549d-4898-9b16-1a4ae509e8d7" width="300" height="300" />
       </p>
       <ul>
         <li>Galaxy Merger</li>
       </ul>
-      <p align="center">
-        <img src="https://github.com/user-attachments/assets/cf0330df-a46d-4ce4-8f54-3c5982bcac37" width="300" height="256" />
+      <p align="left">
+        <img src="https://github.com/user-attachments/assets/cf0330df-a46d-4ce4-8f54-3c5982bcac37" width="300" height="300" />
       </p>
     </td>
   </tr>
