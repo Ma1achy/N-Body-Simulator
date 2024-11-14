@@ -74,7 +74,7 @@ pip install -r requirements.txt
 ```
 or
 ```
-pip install numpy scipy matplotlib plotly astropy pygame imageio[ffmpeg]
+pip install "numpy<2.0" scipy matplotlib plotly astropy pygame imageio[ffmpeg]
 ```
 # **Usage**
 --- 
