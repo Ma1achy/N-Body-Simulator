@@ -7,18 +7,33 @@ A Python based gravitational dynamics simulator, using a quadtree acceleration s
 Used to study the interactions within and between star systems and galaxies for part of a scientific computing module in undergraduate Physics.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ec2741fa-ff7b-45b0-929d-3dcfd5bd4528" width="600" height="600" />
+  <img src="https://github.com/user-attachments/assets/ec2741fa-ff7b-45b0-929d-3dcfd5bd4528" width="400" height="400" />
+  <img src="https://github.com/user-attachments/assets/cf0330df-a46d-4ce4-8f54-3c5982bcac37" width="400" height="400" />
 </p>
 
 # **Features**
 
-+ A gravitational dynamics simulator that uses either:
++ **A gravitational dynamics simulator that uses either**:
   - a Python based implementation of the Barnes-Hut algorithm and a leapfrog intergation scheme.
+  <p align="center">
+  <img src="https://github.com/user-attachments/assets/21985872-9257-4264-bdf3-4bf309291936" width="400" height="400" />
+  </p>
+  
   - a vectorised direction summation scheme via ```numpy``` & ```scipy.integrate.odeint```.
- 
-+ 5 pre-defined simulation inital conditons:
+    
+  <p align="center">
+   <img src="https://github.com/user-attachments/assets/9e2fc945-bff8-4f4d-a877-8e94aaa7378b" width="600" height="250" />
+  </p>
+
++ **5 pre-defined simulation inital conditons**:
   - Binary Star System
+    <p align="left">
+    <img src="https://github.com/user-attachments/assets/0f59e275-049c-49f4-a9d6-a714ea22fbca" width="512" height="512" />
+    </p>  
   - Burrau's Problem
+    <p align="left">
+    <img src="https://github.com/user-attachments/assets/f548dac5-0924-4a38-a148-afd5e1926280" width="512" height="512" />
+    </p>
   - The Solar System (Supports positions of the planets at a specified date & time!)
     <p align="left">
     <img src="https://github.com/user-attachments/assets/f6558622-4002-4235-acd0-c2cfadcbb67d" width="512" height="512" />
@@ -32,27 +47,32 @@ Used to study the interactions within and between star systems and galaxies for 
     <img src="https://github.com/user-attachments/assets/cf0330df-a46d-4ce4-8f54-3c5982bcac37" width="512" height="512" />
     </p>
   
-    ---
-
-+ Interactable simulation results via Pygame, supporting:
++ **Interactable simulation results via Pygame, supporting**:
   - camera movement and zooming
   - frame saving
-
-+ GIF creation of simulations 
+  <p align="left">
+  <img src="https://github.com/user-attachments/assets/3d680856-2f6f-4c44-8a44-cdc9caef6ab2" width="512" height="512" />
+  </p> 
+  
++ **GIF creation of simulations**
 
 --- 
 # **Dependencies**
 ---
-+ Python v3.12+
-  - numpy
-  - scipy
-  - matplotlib
-  - plotly
-  - astropy
-  - Pygame
-  - imageio.v2
- 
-
+```
+python >=3.12
+numpy<2.0
+scipy
+matplotlib
+plotly
+astropy
+Pygame
+imageio.v2
+```
+```
+pip install -r requirements.txt
+```
+or
 ```
 pip install numpy scipy matplotlib plotly astropy pygame imageio[ffmpeg]
 ```
