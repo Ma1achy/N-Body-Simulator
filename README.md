@@ -61,21 +61,7 @@ Used to study the interactions within and between star systems and galaxies, wri
 # **Dependencies**
 --- 
 ```
-python >=3.12
-numpy<2.0
-scipy
-matplotlib
-plotly
-astropy
-Pygame
-imageio.v2
-```
-```
 pip install -r requirements.txt
-```
-or
-```
-pip install "numpy<2.0" scipy matplotlib plotly astropy pygame imageio[ffmpeg]
 ```
 # **Usage**
 --- 
@@ -102,40 +88,58 @@ then run the script. Inside the ```YYYY-MM-DD HH-MM-SS render``` folder a gif wi
 # **Help**
 ---
 
-+ **Why is my simulation taking a long time to compute?**
-  
-    - Make sure have a reasonable maximum number of iterations.
-    - Change the error tolerances in scipy.odeint for ```nbody-brute-force.py```
-    - Reduce the number of bodies in the simulation
-    - Disabling tree saving and relative energy error calculation in ```nbody-barnes-hut.py``` can improve performance
-    - Increasing the minimum quad size in the simulation parameters for ```nbody-barnes-hut.py```  can improve performance
-    - ***NOTE: The Barnes-Hut algorithm will take longer than should be expected for small N of particles whilist mainting the same accuracy as the brute force algorithm due to
-    the lower order integration scheme meaning more timesteps of higher temporal resoultion are required, that and the entire script for it is written in
-    Python whereas ```nbody-barnes-hut.py``` uses scipy and so it is faster at integrating.***
+<details>
+  <summary>Why is my simulation taking a long time to compute?</summary>
+  <ul style="margin-left: 20px;">
+    <li>Make sure to set a reasonable maximum number of iterations.</li>
+    <li>Change the error tolerances in scipy.odeint for <code>nbody-brute-force.py</code>.</li>
+    <li>Reduce the number of bodies in the simulation.</li>
+    <li>Disable tree saving and relative energy error calculation in <code>nbody-barnes-hut.py</code> to improve performance.</li>
+    <li>Increase the minimum quad size in the simulation parameters for <code>nbody-barnes-hut.py</code> to improve performance.</li>
+    <li><strong>Note:</strong> The Barnes-Hut algorithm may take longer for small N of particles, given the lower order integration scheme and the script being fully in Python, whereas <code>nbody-brute-force.py</code> uses SciPy.</li>
+  </ul>
+</details>
 
-+ **How do I change the ```nbody-brute-force.py``` error tolerances?**
-  
-  - In the ```StateVector``` Class change the ```rtol``` and ```atol``` arguments inside the ```scipy.integrate.odeint``` method.
+<details>
+  <summary>How do I change the <code>nbody-brute-force.py</code> error tolerances?</summary>
+  <ul style="margin-left: 20px;">
+    <li>In the <code>StateVector</code> class, change the <code>rtol</code> and <code>atol</code> arguments inside the <code>scipy.integrate.odeint</code> method.</li>
+  </ul>
+</details>
 
-+ **Where are there simulation templates?**
-  
-  - Run ```generate-templates.py``` to generate 8 default simulation templates
+<details>
+  <summary>Where are there simulation templates?</summary>
+  <ul style="margin-left: 20px;">
+    <li>Run <code>generate-templates.py</code> to generate 8 default simulation templates.</li>
+  </ul>
+</details>
 
-+ **How do I quit the Pygame visualisation?**
-  
-  - Use the close window button in the top right corner of the Pygame window or Use the ```ESC``` key to quit the visualisation
+<details>
+  <summary>How do I quit the Pygame visualisation?</summary>
+  <ul style="margin-left: 20px;">
+    <li>Use the close window button in the top right corner of the Pygame window or press the <code>ESC</code> key to quit the visualisation.</li>
+  </ul>
+</details>
 
-+ **How do I control the camera in the Pygame visualisation?**
-  
-  - Use the ```W```, ```A```, ```S```, ```D``` keys to pan the camera in the y+, x-, y-, x+ directions
-  - Use the mouse ```scroll wheel``` to zoom in and out
-  - Press the ```E``` key to reset the zoom of the camera back to the default zoom.
-  - Press the ```R``` key to reset the position and zoom of the camera back to default (useful if you get lost)
+<details>
+  <summary>How do I control the camera in the Pygame visualisation?</summary>
+  <ul style="margin-left: 20px;">
+    <li>Use <code>W</code>, <code>A</code>, <code>S</code>, <code>D</code> keys to pan the camera in the y+, x-, y-, x+ directions.</li>
+    <li>Use the mouse <code>scroll wheel</code> to zoom in and out.</li>
+    <li>Press <code>E</code> to reset the zoom of the camera back to the default zoom.</li>
+    <li>Press <code>R</code> to reset the position and zoom of the camera back to default.</li>
+  </ul>
+</details>
 
-+ **How do I change what is rendered in the Pygame visualisation?**
-  
-  - Press the ```X``` key to toggle the drawing of the centres of masses
-  - Press the ```V``` key to toggle the drawing of the velocity and force vectors
-  - Press the ```Q``` key to toggle the drawing of the Quadtree
-  - Press the ```F``` key to toggle the drawing of body trails
-  - Press the ```C``` key to toggle the debug culling hitboxes
+<details>
+  <summary>How do I change what is rendered in the Pygame visualisation?</summary>
+  <ul style="margin-left: 20px;">
+    <li>Press <code>X</code> to toggle the drawing of the centres of masses.</li>
+    <li>Press <code>V</code> to toggle the drawing of velocity and force vectors.</li>
+    <li>Press <code>Q</code> to toggle the drawing of the Quadtree.</li>
+    <li>Press <code>F</code> to toggle the drawing of body trails.</li>
+    <li>Press <code>C</code> to toggle the debug culling hitboxes.</li>
+  </ul>
+</details>
+
+
