@@ -15,48 +15,94 @@ Used to study the interactions within and between star systems and galaxies, wri
 
 # **Features**
 ---
-+ **A gravitational dynamics simulator that uses either**:
-  - a Python based implementation of the Barnes-Hut algorithm and a leapfrog intergation scheme.
-  <p align="center">
-  <img src="https://github.com/user-attachments/assets/21985872-9257-4264-bdf3-4bf309291936" width="400" height="400" />
-  </p>
-  
-  - a vectorised direction summation scheme via ```numpy``` & ```scipy.integrate.odeint```.
-    
-  <p align="center">
-   <img src="https://github.com/user-attachments/assets/9e2fc945-bff8-4f4d-a877-8e94aaa7378b" width="600" height="250" />
-  </p>
+<h1>Features</h1>
 
-+ **5 pre-defined simulation inital conditons**:
-  - Binary Star System
-    <p align="left">
-    <img src="https://github.com/user-attachments/assets/0f59e275-049c-49f4-a9d6-a714ea22fbca" width="600" height="512" />
-    </p>  
-  - Burrau's Problem
-    <p align="left">
-    <img src="https://github.com/user-attachments/assets/f548dac5-0924-4a38-a148-afd5e1926280" width="512" height="512" />
-    </p>
-  - The Solar System (Supports positions of the planets at a specified date & time!)
-    <p align="left">
-    <img src="https://github.com/user-attachments/assets/f6558622-4002-4235-acd0-c2cfadcbb67d" width="512" height="512" />
-    </p>
-  - Spiral Galaxy
-    <p align="left">
-    <img src="https://github.com/user-attachments/assets/1121a530-549d-4898-9b16-1a4ae509e8d7" width="512" height="512" />
-    </p>
-  - Galaxy Merger
-    <p align="left">
-    <img src="https://github.com/user-attachments/assets/cf0330df-a46d-4ce4-8f54-3c5982bcac37" width="512" height="512" />
-    </p>
-  
-+ **Interactable simulation results via Pygame, supporting**:
-  - camera movement and zooming
-  - frame saving
-  <p align="left">
-  <img src="https://github.com/user-attachments/assets/3d680856-2f6f-4c44-8a44-cdc9caef6ab2" width="600" height="512" />
-  </p> 
-  
-+ **GIF creation of simulations**
+<table>
+  <tr>
+    <td colspan="2"><strong>A gravitational dynamics simulator that uses either:</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>A Python-based implementation of the Barnes-Hut algorithm with a leapfrog integration scheme.</li>
+      </ul>
+      <p align="center">
+        <img src="https://github.com/user-attachments/assets/21985872-9257-4264-bdf3-4bf309291936" width="400" height="400" />
+      </p>
+    </td>
+    <td>
+      <ul>
+        <li>A vectorized direct summation scheme using <code>numpy</code> & <code>scipy.integrate.odeint</code>.</li>
+      </ul>
+      <p align="center">
+        <img src="https://github.com/user-attachments/assets/9e2fc945-bff8-4f4d-a877-8e94aaa7378b" width="700" height="250" />
+      </p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td colspan="2"><strong>5 pre-defined simulation initial conditions:</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>Binary Star System</li>
+      </ul>
+      <p align="center">
+        <img src="https://github.com/user-attachments/assets/0f59e275-049c-49f4-a9d6-a714ea22fbca" width="300" height="256" />
+      </p>
+      <ul>
+        <li>Burrau's Problem</li>
+      </ul>
+      <p align="center">
+        <img src="https://github.com/user-attachments/assets/f548dac5-0924-4a38-a148-afd5e1926280" width="300" height="256" />
+      </p>
+    </td>
+    <td>
+      <ul>
+        <li>The Solar System (Supports positions of the planets at a specified date & time!)</li>
+      </ul>
+      <p align="center">
+        <img src="https://github.com/user-attachments/assets/f6558622-4002-4235-acd0-c2cfadcbb67d" width="300" height="256" />
+      </p>
+      <ul>
+        <li>Spiral Galaxy</li>
+      </ul>
+      <p align="center">
+        <img src="https://github.com/user-attachments/assets/1121a530-549d-4898-9b16-1a4ae509e8d7" width="300" height="256" />
+      </p>
+      <ul>
+        <li>Galaxy Merger</li>
+      </ul>
+      <p align="center">
+        <img src="https://github.com/user-attachments/assets/cf0330df-a46d-4ce4-8f54-3c5982bcac37" width="300" height="256" />
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td colspan="2"><strong>Interactable simulation results via Pygame, supporting:</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>Camera movement and zooming</li>
+        <li>Frame saving</li>
+        <li>GIF creation of simulations</li>
+      </ul>
+    </td>
+    <td>
+      <p align="center">
+        <img src="https://github.com/user-attachments/assets/3d680856-2f6f-4c44-8a44-cdc9caef6ab2" width="600" height="512" />
+      </p>
+    </td>
+  </tr>
+</table>
 
 # **Dependencies**
 --- 
