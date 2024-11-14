@@ -6,7 +6,7 @@
 # **About**
 ---
 A Python based gravitational dynamics simulator, using a quadtree acceleration structure to represent clusters of massive bodies as a hierarchy of their centers of masses, the force calculation is accelerated by applying the Barnes-Hut algorithm. 
-Used to study the interactions within and between star systems and galaxies for part of a scientific computing module in undergraduate Physics.
+Used to study the interactions within and between star systems and galaxies, written as part of a scientific computing module in undergraduate Physics.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ec2741fa-ff7b-45b0-929d-3dcfd5bd4528" width="400" height="400" />
