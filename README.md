@@ -3,6 +3,8 @@
   <img src="https://github.com/user-attachments/assets/58e86a45-9eac-4d28-a979-79011e5ebe7a" />
 </p>
 
+# **About**
+---
 A Python based gravitational dynamics simulator, using a quadtree acceleration structure to represent clusters of massive bodies as a hierarchy of their centers of masses, the force calculation is accelerated by applying the Barnes-Hut algorithm. 
 Used to study the interactions within and between star systems and galaxies for part of a scientific computing module in undergraduate Physics.
 
@@ -12,7 +14,7 @@ Used to study the interactions within and between star systems and galaxies for 
 </p>
 
 # **Features**
-
+---
 + **A gravitational dynamics simulator that uses either**:
   - a Python based implementation of the Barnes-Hut algorithm and a leapfrog intergation scheme.
   <p align="center">
@@ -56,9 +58,8 @@ Used to study the interactions within and between star systems and galaxies for 
   
 + **GIF creation of simulations**
 
---- 
 # **Dependencies**
-
+--- 
 ```
 python >=3.12
 numpy<2.0
