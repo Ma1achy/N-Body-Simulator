@@ -113,25 +113,31 @@ pip install -r requirements.txt
 ```
 # **Usage**
 --- 
-- To create a simulation run ```generate-templates.py``` to create 8 default simulation templates, these are .csv files containing
-the inital conditions to different simulations, the default directory is ```sim templates/```. Or modify the script as desired to produce your own inital conditions.
+<details>
+  <summary>Creating a simulation:</summary>
+   <ul style="margin-left: 20px;">
+      <p>To create a simulation, run <code>generate-templates.py</code> to create 8 default simulation templates. These are .csv files containing the initial conditions for different simulations. The default directory is <code>sim templates/</code>. Or modify the script as desired to produce your own initial conditions.</p>
+   </ul>
+</details>
 
-- To run a simulation open either ```nbody-barnes-hut.py``` or ```nbody-brute-force.py``` and change the variable ```input_path``` to contain the path of the simulation template 
-you want to run or use command line arguments ```--input``` or ```-i``` to change the path variable. By default both alogrithms will use their test case templates.
+<details>
+  <summary>Running a simulation:</summary>
+  <ul style="margin-left: 20px;">
+    <p>To run a simulation, open either <code>nbody-barnes-hut.py</code> or <code>nbody-brute-force.py</code> and change the variable <code>input_path</code> to contain the path of the simulation template you want to run, or use command line arguments <code>--input</code> or <code>-i</code> to change the path variable. By default, both algorithms will use their           test case templates.</p>
+    <p><strong>NOTE:</strong> The simulation templates are not compatible between the two different algorithms!</p>
+    <ul style="margin-left: 20px;">
+</details>
 
-- ***NOTE: The simulation templates are not compatiable between the two different algorithms!***
-
-- Once the simulation has finished processing to visualise it, find the associated simulation result folder, labled ```YYYY-MM-DD HH-MM-SS sim``` in ```results/```.
-  
-- In ```visualise.py``` change the ```path``` variable to the path of the simulation result directory and run the script.
-A Pygame window should open and you will be able to see the simulation results animate. The default visualisation is set to a precomputed simulation of the test case.
-
-- By default the visualisation saves every frame to a ```YYYY-MM-DD HH-MM-SS render``` folder in ```rendered/```.
-
-- To render a simulation to a .gif file in ```render-to-gif.py``` replace the ```render_dir``` variable with the path of the associated ```YYYY-MM-DD HH-MM-SS render``` directory,
-then run the script. Inside the ```YYYY-MM-DD HH-MM-SS render``` folder a gif will be generated from the frames of the visualised simulation with the name ```YYYY-MM-DD HH-MM-SS render.gif```.
-
-- There are two precomputed simulations, The test case, and a simulation of the solar system ready to be used with the Pygame visualisation.
+<details>
+  <summary>Visualising simulation results:</summary>
+  <ul style="margin-left: 20px;">
+    <p>Once the simulation has finished processing, to visualise it, find the associated simulation result folder, labeled <code>YYYY-MM-DD HH-MM-SS sim</code> in <code>results/</code>.</p>
+    <p>In <code>visualise.py</code>, change the <code>path</code> variable to the path of the simulation result directory and run the script. A Pygame window should open, and you will be able to see the simulation results animate. The default visualisation is set to a precomputed simulation of the test case.</p>
+    <p>By default, the visualisation saves every frame to a <code>YYYY-MM-DD HH-MM-SS render</code> folder in <code>rendered/</code>.</p>
+    <p>To render a simulation to a .gif file in <code>render-to-gif.py</code>, replace the <code>render_dir</code> variable with the path of the associated <code>YYYY-MM-DD HH-MM-SS render</code> directory, then run the script. Inside the <code>YYYY-MM-DD HH-MM-SS render</code> folder, a gif will be generated from the frames of the visualised simulation with the           name <code>YYYY-MM-DD HH-MM-SS render.gif</code>.</p>
+    <p>There are two precomputed simulations: The test case and a simulation of the solar system, ready to be used with the Pygame visualisation.</p>
+    <ul style="margin-left: 20px;">
+</details>
 
 # **Help**
 ---
